@@ -1,7 +1,9 @@
+import style from 'styles/pages/index.module.css'
+
 export default function Home() {
   return (
-    <div id="index-wrapper">
-      <h2>Ciao</h2>
+    <div className={style.main}>
+      <h2 className={style.title}>Ciao</h2>
     </div>
   )
 }
