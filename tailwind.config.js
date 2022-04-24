@@ -48,7 +48,7 @@ module.exports = {
             ...colors,
         },
         fontFamily: {
-            sans: ['Pushster', ...defaultFontFamily['sans']],
+            sans: ['Poppins', ...defaultFontFamily['sans']],
             serif: [...defaultFontFamily['serif']],
             mono: [...defaultFontFamily['mono']],
         },
