@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import style from 'styles/pages/index.module.css';
-import { GREETING_MESSAGES } from 'lib/utils';
+
+const GREETING_MESSAGES = ['Ciao', 'Hello', 'Hola', 'Salut', 'Hallo', 'Olà'];
 
 export default function Home() {
     const [selectedGreeting, setSelectedGreeting] = useState(0);
