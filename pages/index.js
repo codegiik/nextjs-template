@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import style from 'styles/pages/index.module.css';
-
-const GREETING_MESSAGES = ['Ciao', 'Hello', 'Hola', 'Salut', 'Hallo', 'Olà'];
+import { GREETING_MESSAGES } from 'lib/utils';
 
 export default function Home() {
     const [selectedGreeting, setSelectedGreeting] = useState(0);
@@ -13,10 +12,14 @@ export default function Home() {
 
     return (
         <div className={style.main}>
-            <h2 className={style.title}>
+            <h2 className={style.title} data-test="greeting">
                 {GREETING_MESSAGES[selectedGreeting]}
             </h2>
-            <button className={style.button} onClick={changeGreeting}>
+            <button
+                className={style.button}
+                onClick={changeGreeting}
+                data-test="change-greeting-button"
+            >
                 Click me!
             </button>
         </div>
