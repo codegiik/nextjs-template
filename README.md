@@ -1,4 +1,5 @@
 # codegiik's next.js config
+
 This repo could be used as a template to create projects with nextjs.
 
 ```
