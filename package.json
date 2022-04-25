@@ -10,8 +10,8 @@
         "cypress": "cypress open",
         "cypress:headless": "cypress run",
         "prettify": "prettier -w .",
-        "ci": "start-server-and-test \"yarn build && yarn start\" http://127.0.0.1:3000 \"yarn cypress:headless\"",
-        "ci:gui": "start-server-and-test \"yarn build && yarn start\" http://127.0.0.1:3000 \"yarn cypress\""
+        "ci": "start-server-and-test \"npm run build && npm run start\" http://127.0.0.1:3000 cypress:headless",
+        "ci:gui": "start-server-and-test \"npm run build && npm run start\" http://127.0.0.1:3000 cypress"
     },
     "dependencies": {
         "next": "12.1.5",
