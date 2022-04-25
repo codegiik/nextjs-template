@@ -15,7 +15,7 @@ jobs:
 
         strategy:
             matrix:
-                node-version: [16.x, 17.x]
+                node-version: [17.x]
                 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
         steps:
@@ -25,6 +25,6 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: 'npm'
-            - run: npm i -g @next/swc-linux-x64-gnu
+            - run: npm i @next/swc-linux-x64-gnu
             - run: npm ci
             - run: npm run ci
