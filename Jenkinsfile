@@ -9,6 +9,7 @@ pipeline {
     stage('Installing modules') {
       steps {
         sh 'npm install'
+        sh 'npm install @next/swc-linux-x64-gnu'
       }
     }
     stage('Linting') {
