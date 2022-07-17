@@ -1,12 +1,9 @@
 pipeline {
   agent {
-    docker {
-      image 'cypress/base:latest'
-      args '-p 3000:3000'
-    }
+    dockerfile true
   }
   stages {
-    stage('Installing dependencies') {
+    stage('Installing modules') {
       steps {
         sh 'npm install'
         sh 'npm install @next/swc-linux-x64-gnu'
