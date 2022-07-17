@@ -10,6 +10,7 @@ pipeline {
       steps {
         sh 'npm install'
         sh 'npm install @next/swc-linux-x64-gnu'
+        sh 'npx cypress install'
       }
     }
     stage('Linting') {
